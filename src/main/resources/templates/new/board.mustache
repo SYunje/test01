@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation | My 3rd website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css"
+          integrity="sha512-b42SanD3pNHoihKwgABd18JUZ2g9j423/frxIP5/gtYgfBz/0nDHGdY/3hi+3JwhSckM3JLklQ/T6tJmV7mZEw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+          integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body class="reservation">
+<a id="scrolltoTop" class="shadow-xl">Top</a>
+{{>layouts/mobileheader}}
+{{>layouts/navigation}}
+
+<!-- Top Banner -->
+<section id="topBanner" class="banner mb-0 wow fadeInDown" style="background-image: url('/assets/images/pre-entry.jpg');">
+    <div class="section-content w-75">
+        <div class="container text-center rgba-black-light py-4 text-white">
+            <h1 class="display-4">Reservation</h1>
+            <hr class="hr-white">
+            <p class="lead">We will reply as soon as possible. Thank you.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Reservation Message -->
+<section id="reservation-content">
+    <div class="section-content">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-20 mb-5 wow fadeInLeft">
+                    <h3>Send us your message</h3>
+                    <p class="lead mt-3 mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, veritatis.</p>
+
+                    <form action="/new/board/create" class="row"  method="post">
+                        <div class="col-12 my-2">
+                            <input type="text" id="name" class="form-control" placeholder="제목" name="title">
+                        </div>
+
+                        <div class="col-15 my-2">
+                            <textarea id="content" cols="30" rows="8" class="form-control" placeholder="내용" name="content"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn bg-purple text-white">Send <i class="far fa-paper-plane ms-1"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+{{>layouts/footer}}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"
+        integrity="sha512-6gudNVbNM/cVsLUMOb8g2b/RBqtQJ3aDfRFgU+5paeaCTtbYY/Dg00MzZq7r6RvJGI2KKtPBhjkHGTL/iOe21A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript"
+        src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=YOUR_CLIENT_ID"></script>
+<script type="module" src="/assets/js/main.js"></script>
+</body>
+
+</html>

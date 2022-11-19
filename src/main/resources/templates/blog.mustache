@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | My 3rd website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css" integrity="sha512-b42SanD3pNHoihKwgABd18JUZ2g9j423/frxIP5/gtYgfBz/0nDHGdY/3hi+3JwhSckM3JLklQ/T6tJmV7mZEw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="blog">
+  <a id="scrolltoTop" class="shadow-xl">Top</a>
+  {{>layouts/mobileheader}}
+  <!-- Navbar -->
+  {{>layouts/navigation}}
+
+
+
+
+
+  <!-- Top Banner -->
+  <section id="topBanner" class="banner mb-0 wow fadeInDown">
+      <div class="section-content w-75">
+          <div class="container text-center rgba-black-light py-4 text-white">
+              <h1 class="display-4">가장 좋아하는 것들</h1>
+              <hr class="hr-white">
+              <p class="lead">영화, 취미
+              </p>
+          </div>
+      </div>
+  </section>
+
+  <!-- Blog Top -->
+  <section id="blog-top">
+    <div class="section-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-8 wow slideInLeft">
+            <div id="blog-slides" class="carousel slide shadow-xl" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#blog-slides" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#blog-slides" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#blog-slides" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/assets/images/bg1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First Post Title</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/images/bg2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second Post Title</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/images/bg3.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third Post Title</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 wow slideInRight d-none d-xl-flex justify-content-between">
+            <div class="row">
+                <div class="col-xl-12 wow slideInRight">
+                  <div class="card shadow-xl border-0 bg-dark text-white">
+                    <img src="/assets/images/blog1.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay rgba-blue-grey-light">
+                      <h5 class="card-title text-warning">Post title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-xl-12 wow slideInRight" data-wow-delay="0.2s">
+                  <div class="card shadow-xl border-0 bg-dark text-white">
+                    <img src="/assets/images/blog2.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay rgba-blue-grey-light">
+                      <h5 class="card-title text-warning">Post title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <main id="postContent">
+    <div class="section-content">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-9">
+            <article>
+              <p class="lead fst-italic text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eaque temporibus laboriosam facilis et labore nemo ad dignissimos inventore magnam.</p>
+              <img src="/assets/images/project-4.jpg" alt="" class="img-fluid my-3">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, voluptatum ipsum exercitationem quibusdam in assumenda inventore similique beatae, accusantium, enim dolorem praesentium ipsam. Maiores quam minima deleniti harum? Nemo, temporibus ipsa? Dolore laborum minima doloremque odit, excepturi mollitia saepe minus eveniet repellendus explicabo cum eos molestias distinctio sit a in.</p>
+              <br>
+              <h1 class="display-5 text-center mb-3">This is display-5 heading</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti maxime ratione, natus libero nulla laboriosam neque ducimus harum illum autem!</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate delectus enim tempore quibusdam libero possimus molestiae perspiciatis adipisci ducimus error pariatur fugiat similique nihil aliquid, odit expedita atque inventore! Est?</p>
+              <br>
+              <figure class="text-center">
+                <blockquote class="blockquote">
+                  <p>This is a beautiful blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  This paragraph is written in famous Book.
+                </figcaption>
+              </figure>
+              <br>
+              <h3 class="mb-3">This is heading 4</h3>
+              <img src="/assets/images/port2.jpg" alt="" class="img-fluid float-md-start d-block mx-auto me-md-4 mb-4 mt-1 shadow" width="400px">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure necessitatibus eaque nam deleniti soluta labore et, doloribus neque sapiente facilis? Soluta omnis assumenda adipisci quod facere a error neque? Unde ab eaque facilis molestiae voluptatibus soluta laboriosam corporis amet deserunt suscipit, aliquid dolorum inventore fuga autem similique illum beatae sit tempora nam animi, minus neque. Esse id suscipit mollitia sed laborum asperiores quis illum blanditiis quas dolorum aut cumque ratione assumenda exercitationem nemo aspernatur provident enim eius, reprehenderit officiis voluptate. Dolore ab optio, ratione cupiditate adipisci consequatur quas error ex facilis! Id nesciunt iusto consequuntur dignissimos quaerat omnis repellat rerum.</p>
+              <br>
+              <h3 class="mb-3">This is heading 4</h3>
+              <img src="/assets/images/port3.jpg" alt="" class="img-fluid float-md-end d-block mx-auto ms-md-4 mb-4 mt-1 shadow" width="300px">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores harum alias, dignissimos dolorum nam, ipsam optio id sint voluptatibus nihil est impedit perspiciatis tenetur quaerat. Distinctio dolores officia accusantium, nisi voluptatibus rem quos quod culpa voluptas iure. Nihil dolorem at perferendis eum, a perspiciatis eius? Totam ipsum fuga porro aut omnis molestiae perferendis voluptatum impedit ducimus nostrum deleniti fugiat accusantium sapiente rem, suscipit architecto corrupti ratione quo amet earum consectetur. Doloremque ullam officia ratione debitis quaerat, neque illum deserunt voluptate?</p>
+              <br>
+              <h1 class="display-5 text-center mb-3">This is second display-5 heading</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui ipsam repudiandae commodi? Provident illo sint eligendi vitae dicta adipisci quis eius velit perferendis, facere asperiores. Ipsa esse nihil soluta quo optio eius quisquam deleniti. Laudantium earum, repellendus, asperiores quo magnam qui, molestiae facilis optio incidunt doloribus consequatur illo odio! Odio perspiciatis fugiat, ex qui distinctio at! Vero praesentium repellat consequatur, consequuntur aspernatur illo earum nesciunt ad. Odit quos expedita asperiores. Ducimus enim expedita culpa sit veniam placeat asperiores cupiditate eligendi commodi tempora! Nihil ratione illo blanditiis, commodi, unde, provident maiores quam amet reiciendis praesentium veniam? Maxime possimus officiis tempora!</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+{{>footer}}
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js" integrity="sha512-6gudNVbNM/cVsLUMOb8g2b/RBqtQJ3aDfRFgU+5paeaCTtbYY/Dg00MzZq7r6RvJGI2KKtPBhjkHGTL/iOe21A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=YOUR_CLIENT_ID"></script>
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>

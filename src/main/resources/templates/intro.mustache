@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me | My 3rd website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.min.css" integrity="sha512-b42SanD3pNHoihKwgABd18JUZ2g9j423/frxIP5/gtYgfBz/0nDHGdY/3hi+3JwhSckM3JLklQ/T6tJmV7mZEw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="intro">
+<a id="scrolltoTop" class="shadow-xl">Top</a>
+
+
+{{>layouts/mobileheader}}
+{{>layouts/navigation}}
+
+<!-- Top Banner -->
+<section id="topBanner" class="banner mb-0 wow fadeInDown" style="background-image: url('/assets/images/bg_universe.jpg');">
+    <div class="section-content w-75">
+        <div class="container text-white">
+            <h1 class="display-4">Introduction</h1>
+            <p class="lead">Let me introduce our Company. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quasi!</p>
+            <div id="banner-collape" class="collapse">
+                <br>
+                <hr class="hr-white my-4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam hic, aspernatur tempora culpa deserunt rem.</p>
+            </div>
+            <p class="lead">
+                <button class="btn btn-outline-light btn-lg" data-bs-target="#banner-collape" data-bs-toggle="collapse" type="button">Learn more</button>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CEO -->
+<section id="ceo" style="background-image: url('/assets/images/tile.jpg'); ">
+    <div class="section-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/assets/images/chris.jpg" alt="" class="img-fluid shadow-xl wow faseInleft">
+                </div>
+                <div class="col-md-6 wow fadeInRight">
+                    <h1>John Doe <small class="text-warning font-weight-bold">CEO</small></h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam magnam perspiciatis iusto facilis non animi, aspernatur eaque repellendus laborum ducimus odit! Pariatur vel libero quidem reprehenderit, deserunt cumque voluptatibus corrupti.</p>
+                    <hr class="mt-4">
+                    <div class="mt-5 wow fadeInRight ratio ratio-16x9">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/IAR2sYyMuiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Brand -->
+<section id="brand-history" class="section-content" style="background-image: url('/assets/images/brand.jpg'); ">
+    <div class="container">
+        <div class="row brand-content rgba-black-light p-3 wow bounceIn">
+            <div class="col-9 offset-2 text-center text-white my-5">
+                <h3>Our History, and ...</h3>
+                <p class="lead my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus itaque id aliquid, praesentium facilis nulla nostrum quisquam, repudiandae cumque tempora libero. Pariatur cupiditate animi sint inventore, earum quasi. Eius, magni!</p>
+            </div>
+            <div class="col-md-5 mb-5 text-white">
+                <h4 class="mb-4">Brief History</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quibusdam non corrupti nulla, culpa nostrum. Voluptatem quis voluptas cumque, eos asperiores neque cupiditate corporis quod itaque ad voluptate, perferendis nemo.</p>
+            </div>
+            <div class="col-md-5 mb-5 text-white">
+                <h4 class="mb-4">My career</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quibusdam non corrupti nulla, culpa nostrum. Voluptatem quis voluptas cumque, eos asperiores neque cupiditate corporis quod itaque ad voluptate, perferendis nemo.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+{{>layouts/footer}}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js" integrity="sha512-6gudNVbNM/cVsLUMOb8g2b/RBqtQJ3aDfRFgU+5paeaCTtbYY/Dg00MzZq7r6RvJGI2KKtPBhjkHGTL/iOe21A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=YOUR_CLIENT_ID"></script>
+<script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>
